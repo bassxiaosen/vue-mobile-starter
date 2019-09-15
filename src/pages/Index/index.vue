@@ -1,8 +1,15 @@
 <template>
-  <h1>Hello <span>{{vue}}</span></h1>
+  <div>
+    <h1>Hello <span>{{vue}}</span></h1>
+    <CalendarComponent />
+  </div>
 </template>
 <script>
+import CalendarComponent from "@/components/calendar/index.vue"
 export default {
+  components: {
+    CalendarComponent
+  },
   data() {
     return {
       vue: 'Vue'
