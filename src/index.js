@@ -1,5 +1,11 @@
 import Vue from "vue"
-import Index from "./pages/Index"
 import "./styles/global.less"
+import 'element-ui/lib/theme-chalk/index.css';
+import 'normalize.css'
 
-new Vue({render: h => h(Index)}).$mount('#root')
+import Index from "./pages/Index"
+
+import('element-ui').then(ElementUI => {
+  Vue.use(ElementUI)
+  new Vue({render: h => h(Index)}).$mount('#root')
+})
