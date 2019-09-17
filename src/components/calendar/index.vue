@@ -121,7 +121,7 @@ export default {
       border: 1px solid #eee;
     }
     .dayWrapper {
-      padding: 10px;
+      padding: 10px 0;
       font-size: 24px;
       display: flex;
       border: 1px solid #eee;
