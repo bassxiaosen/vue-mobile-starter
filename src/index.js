@@ -1,5 +1,9 @@
 import Vue from "vue"
-import Index from "./pages/Index"
+import VueRouter from "vue-router"
+import router from "@/router/index"
+import App from "@/App.vue"
 import "./styles/global.less"
 
-new Vue({render: h => h(Index)}).$mount('#root')
+Vue.use(VueRouter)
+
+new Vue({render: h => h(App), router}).$mount('#root')
