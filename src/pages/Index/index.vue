@@ -13,7 +13,7 @@ export default {
 <style lang="less">
   h1 {
     color: #e9e9e9;
-    font-size: 100px;
+    font-size: 32px;
     span {
       color: red;
     }
